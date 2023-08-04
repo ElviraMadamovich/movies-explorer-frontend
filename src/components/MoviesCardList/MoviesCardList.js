@@ -6,11 +6,11 @@ export default function MoviesCardList({ movies }) {
     <section
       className={`${
         movies.length < 5
-          ? "list list__button"
-          : "list"
+          ? "movies-card-list movies-card-list__button"
+          : "movies-card-list"
       }`}
     >
-      <ul className="list__container">
+      <ul className="movies-card-list__container">
         {movies.map((card, id) => {
           return (
               <MoviesCard
@@ -25,8 +25,8 @@ export default function MoviesCardList({ movies }) {
       <button
         className={`${
           movies.length > 3
-            ? "list__button"
-            : "list__button-inactive"
+            ? "movies-card-list__button"
+            : "movies-card-list__button-inactive"
         }`}
       >
         Ещё

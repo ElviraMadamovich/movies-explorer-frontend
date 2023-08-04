@@ -6,7 +6,7 @@
 .notification__title {
   margin-top: 246px;
   margin-bottom: 0px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 140px;
   font-weight: 400;
   line-height: 169px;
@@ -15,7 +15,7 @@
 .notification__subtitle {
   margin-top: 5px;
   margin-bottom: 0px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -24,7 +24,7 @@
 .notification__link {
   margin-top: 184px;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;

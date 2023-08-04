@@ -1,3 +1,4 @@
+import "./Register.css";
 import { Link } from 'react-router-dom';
 import Authorization from "../Authorization/Authorization";
 import { useValidation } from "../../hooks/useValidation";
@@ -16,7 +17,9 @@ function Register({ onRegister }) {
 
       <section className="authorization">
         <div className="authorization__content">
-          <img className="login__logo" src={logo} alt="Лого" />
+          <Link to="/" className="header__logo">
+            <img src={logo} alt="Логотип" />
+          </Link>
           <h2 className="authorization__title">Добро пожаловать!</h2>
           <Authorization isValid={!isValid} name={'register'} onSubmit={submitAuthorization} buttonText="Зарегистрироваться">
             <fieldset className="authorization__data">
@@ -29,7 +32,7 @@ function Register({ onRegister }) {
                 required
                 minLength="2"
                 maxLength="40"
-                placeholder=""
+                placeholder="Имя"
                 value={values.nameInput || ''}
                 onChange={handleUpdate}
                 autoComplete="new-name" />
@@ -47,7 +50,7 @@ function Register({ onRegister }) {
                 required
                 minLength="2"
                 maxLength="40"
-                placeholder=""
+                placeholder="E-mail"
                 value={values.emailInput || ''}
                 onChange={handleUpdate}
                 autoComplete="new-email" />
@@ -65,7 +68,7 @@ function Register({ onRegister }) {
                 required
                 minLength="2"
                 maxLength="200"
-                placeholder=""
+                placeholder="Пароль"
                 value={values.password || ''}
                 onChange={handleUpdate}
                 autoComplete="new-password" />

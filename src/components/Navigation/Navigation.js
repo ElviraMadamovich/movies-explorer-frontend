@@ -40,7 +40,7 @@ function Navigation({ handleClose }) {
         </NavLink>
       </div>
       <div className="navigation__button-container">
-        <Link to="#" className="navigation__account">
+        <Link to="/profile" className="navigation__account">
           Аккаунт
         </Link>
         <button className="navigation__account-button">

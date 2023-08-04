@@ -18,7 +18,7 @@ function Login({ onLogin }) {
       <section className="authorization">
         <div className="authorization__content">
           <Link to='/' className='login__logo'>
-            <img className='login__logo-svg' src={logo} alt="логотип" />
+            <img className='login__logo-svg' src={logo} alt="Логотип" />
           </Link>
           <h2 className='authorization__title'>
             Рады видеть!
@@ -31,7 +31,7 @@ function Login({ onLogin }) {
                 className={errors.emailInput ? "authorization__input authorization__input_type_error" : "authorization__input"}
                 type="email"
                 name="emailInput"
-                placeholder=""
+                placeholder="E-mail"
                 minLength="2"
                 maxLength="40"
                 required
@@ -45,20 +45,19 @@ function Login({ onLogin }) {
 
               <label className="login__line">Пароль</label>
               <input
-                id="passwordInput"
-                className={errors.passwordInput ? "authorization__input authorization__input_type_error" : "authorization__input"}
-                type="passwordInput"
-                name="passwordInput"
-                placeholder=""
+                id="password-input"
+                className={errors.password ? "authorization__input authorization__input_type_error" : "authorization__input"}
+                type="password"
+                name="password"
+                required
                 minLength="2"
                 maxLength="200"
-                required
-                value={values.passwordInput || ''}
+                placeholder="Пароль"
+                value={values.password || ''}
                 onChange={handleUpdate}
                 autoComplete="new-password" />
 
-              <span
-                id="passwordInput-error"
+              <span id="name-password-error"
                 className="authorization__error">{errors.password}</span>
             </fieldset>
           </Authorization>
@@ -67,7 +66,7 @@ function Login({ onLogin }) {
           <p className='authorization__question'>
             Еще не зарегистрированы?
           </p>
-          <Link to='/movies' className='login__registration'>
+          <Link to='/signup' className='login__registration'>
             Регистрация
           </Link>
         </div>

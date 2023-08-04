@@ -2,7 +2,7 @@ import "./Authorization.css";
 import React, { useState } from 'react';
 import loadingPic from "../../images/loading.gif";
 
-function Authorization({ name, buttonName, onSubmit, isValid, children }) {
+function Authorization({ name, buttonText, onSubmit, isValid, children }) {
 
   const [loadingImage, setLoadingImage] = useState(false);
 
@@ -22,7 +22,7 @@ function Authorization({ name, buttonName, onSubmit, isValid, children }) {
           disabled={isValid}
           className={isValid ? "authorization__button authorization__button_inactive" : "authorization__button"}
           type="submit"
-          value={buttonName} />
+          value={buttonText} />
       }
     </form>
   );

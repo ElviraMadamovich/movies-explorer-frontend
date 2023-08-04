@@ -20,7 +20,7 @@
 }
 
 .promo__title {
-	font-family: "Inter", sans-serif;
+	font-family: "Inter", "Arial", sans-serif;
 	width: 100%;
 	font-style: normal;
 	font-weight: 400;
@@ -31,7 +31,7 @@
 }
 
 .promo__subtitle {
-	font-family: "Inter", sans-serif;
+	font-family: "Inter", "Arial", sans-serif;
 	max-width: 310px;
 	max-height: 32px;
 	color: rgb(255, 255, 255, 1);
@@ -47,19 +47,16 @@
 	margin: 61px 0px 0px auto;
 }
 
-@media screen and (max-width: 768px) {
-	.promo {
-		flex-direction: column;
-	}
-
+@media screen and (min-width: 501px) and (max-width:1279px) {
 	.promo__field {
 		flex-direction: column-reverse;
 		text-align: center;
-		margin: 140px 30px 25px 30px;
+		margin: 140px 0 93px 0;
 	}
 
 	.promo__text {
-		margin: 16px 20px 67px 20px;
+		margin: 18px 0 0 0;
+		width: 100%;
 	}
 
 	.promo__title {
@@ -67,7 +64,8 @@
 		font-weight: 400;
 		font-size: 40px;
 		line-height: 50px;
-		margin: 0 0 20px 0;
+		margin: 0 0 21px 0;
+		width: 100%;
 	}
 
 	.promo__subtitle {
@@ -78,29 +76,9 @@
 	.promo__image {
 		margin: 0px auto 30px auto;
 	}
-
 }
 
-@media screen and (max-width: 668px) {
-	.promo__image {
-		max-height: 280px;
-	}
-}
-
-@media screen and (max-width: 450px) {
-	.promo__title {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 30px;
-		line-height: 38px;
-	}
-}
-
-@media screen and (max-width: 350px) {
-	.promo {
-		flex-direction: column;
-	}
-
+@media screen and (min-width: 320px) and (max-width: 500px) {
 	.promo__field {
 		flex-direction: column-reverse;
 		text-align: center;
@@ -113,11 +91,16 @@
 	}
 
 	.promo__title {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 38px;
 		letter-spacing: -0.04em;
 		margin: 0 0 25px 0;
 	}
 
 	.promo__subtitle {
+		max-width: 260px;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 13px;
@@ -128,7 +111,7 @@
 
 	.promo__image {
 		width: 210px;
-		height: 210px;
+		max-height: 206px;
 		margin: 0px auto 30px auto;
 	}
 }

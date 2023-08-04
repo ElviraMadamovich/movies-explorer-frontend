@@ -5,7 +5,7 @@
 }
 
 .navtab__link {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;

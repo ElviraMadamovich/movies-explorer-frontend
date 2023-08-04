@@ -1,10 +1,10 @@
 .profile {
-  margin: 0;
+  margin: 0 0 60px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 1280px;
+  width: 100%;
 }
 
 .profile__content {
@@ -25,7 +25,7 @@
 
 .profile__title {
   color: black;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
@@ -38,7 +38,7 @@
   justify-content: space-between;
   width: 100%;
   color: black;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
@@ -49,6 +49,7 @@
   text-align: end;
   background-color: transparent;
   margin: 0;
+  padding: 0;
   border-bottom: 1px solid #E8E8E8;
   color: rgba(0, 0, 0, 1);
   font-style: normal;
@@ -94,7 +95,7 @@
 .profile__button {
   margin: 15px 0 0 0;
   color: black;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
@@ -110,7 +111,7 @@
 .profile__link {
   margin: 15px 0 0 0;
   color: rgba(238, 52, 101, 1);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 500;
   line-height: 16px;
@@ -143,7 +144,7 @@
   }
 
   .profile__content {
-    max-width: 260px;
+    width: 100%;
   }
 
   .profile__title {

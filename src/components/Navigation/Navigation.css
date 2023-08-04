@@ -25,7 +25,7 @@
 }
 .navigation__link {
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
@@ -40,7 +40,7 @@
 }
 .navigation__account {
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;

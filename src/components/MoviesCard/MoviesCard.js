@@ -11,25 +11,25 @@ export default function MoviesCard({ title, duration, link }) {
   };
 
   return (
-    <li className="card">
-      <img src={link} alt={title} className="card__image" />
-      <div className="card__element">
-        <h3 className="card__title">{title}</h3>
+    <li className="movies-card">
+      <img src={link} alt={title} className="movies-card__image" />
+      <div className="movies-card__element">
+        <h3 className="movies-card__title">{title}</h3>
         {location.pathname === "/movies" ? (
           <button
             type="button"
-            className={`card__like_${!isCardLiked ? "inactive" : "active"
+            className={`movies-card__like_${!isCardLiked ? "inactive" : "active"
               }`}
             onClick={handleOnClick}
           ></button>
         ) : (
           <button
             type="button"
-            className="card__dislike"
+            className="movies-card__dislike"
           ></button>
         )}
       </div>
-      <div className="card__time">{duration}</div>
+      <div className="movies-card__time">{duration}</div>
     </li>
   );
 }

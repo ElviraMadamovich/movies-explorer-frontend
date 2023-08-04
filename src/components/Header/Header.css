@@ -5,6 +5,11 @@
   width: 100%;
 }
 
+.header__logo:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
 .header_login {
   background-color: rgba(7, 48, 66, 1);
 }
@@ -15,7 +20,6 @@
   justify-content: space-between;
   min-height: 74px;
   position: relative;
-  max-width: 1280px;
   width: 100%;
   padding: 0px 70px;
   position: relative;
@@ -28,7 +32,7 @@
 
 .header__register {
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -46,7 +50,7 @@
   background-color: rgba(61, 220, 132, 1);
   padding: 8px 20px 8px 20px;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -74,7 +78,7 @@
 
 .header__account-link {
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -94,7 +98,7 @@
 .header__navlink {
   color: black;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -109,14 +113,14 @@
   font-weight: 500;
   color: black;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
 
 .header__menu-button {
   position: absolute;
-  top: 15px;
+  top: 13px;
   right: 30px;
   background-color: rgba(255, 255, 255, 1);
   border: none;
@@ -127,7 +131,7 @@
   border: 0px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .header__login-menu {
     padding: 0px 30px;
   }
@@ -142,9 +146,10 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .header__login-menu {
-    padding: 0px 14px;
+    padding: 0;
+    margin: 0 14px;
   }
 
   .header__button {
@@ -160,7 +165,7 @@
 
   .header__menu-button {
     top: 16px;
-    right: 11px;
+    right: -5px;
     max-width: 35px;
     max-height: 43px;
   }

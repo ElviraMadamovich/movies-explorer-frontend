@@ -7,11 +7,13 @@ import Footer from "../Footer/Footer";
 
 export default function Movies() {
   return (
-    <section className="movies">
-      <Header />
-      <SearchForm />
-      <MoviesCardList movies={movies} />
-      <Footer />
-    </section>
+    <main className="main">
+      <section className="movies">
+        <Header />
+        <SearchForm />
+        <MoviesCardList movies={movies} />
+        <Footer />
+      </section>
+    </main>
   );
 }

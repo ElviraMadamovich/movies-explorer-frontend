@@ -1,32 +1,32 @@
-.card {
+.movies-card {
   all: unset;
-  border-radius: 2%;
+  border-radius: 6px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
   min-height: 281px;
   max-width: 364px;
 }
 
-.card__element {
+.movies-card__element {
   display: flex;
-  margin: 6px 16px 10px 17px;
+  margin: 5px 20px 10px 15px;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
 }
 
-.card__title {
-  font-family: "Inter", sans-serif;
+.movies-card__title {
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 500;
   font-size: 13px;
   color: black;
   margin: 6px 0 0 0;
 }
 
-.card__title:nth-child(2) {
+.movies-card__title:nth-child(2) {
   font-size: 14px;
 }
 
-.card__like_active {
+.movies-card__like_active {
   background-image: url(../../images/like.svg);
   background-repeat: no-repeat;
   border: none;
@@ -34,10 +34,15 @@
   padding: 0;
   width: 24px;
   height: 24px;
-  margin: 0 10px 0 0;
+  margin: 0;
 }
 
-.card__like_inactive {
+.movies-card__like_active:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.movies-card__like_inactive {
   background-image: url(../../images/dislike.svg);
   background-repeat: no-repeat;
   border: none;
@@ -45,10 +50,15 @@
   padding: 0;
   width: 24px;
   height: 24px;
-  margin: 0 10px 0 0;
+  margin: 0;
 }
 
-.card__dislike {
+.movies-card__like_inactive:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.movies-card__dislike {
   background-image: url(../../images/delete-card.svg);
   background-repeat: no-repeat;
   border: none;
@@ -56,56 +66,59 @@
   padding: 0px;
   width: 24px;
   height: 24px;
-  margin: 0 6px 0 0;
+  margin: 0;
 }
 
-.card__time {
+.movies-card__dislike:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.movies-card__time {
   color: rgba(139, 139, 139, 1);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
-  padding-top: 6px;
-  margin: 0 0 0 17px;
+  padding: 5px 0 0 0;
+  margin: 0 0 0 15px;
 }
 
-.card__image {
+.movies-card__image {
   object-fit: cover;
   background-position: center;
-  border-radius: 2%;
   width: 100%;
-  height: 72, 24%;
 }
 
 @media screen and (max-width: 768px) {
-  .card {
+  .movies-card {
     max-width: 339px;
+    min-height: 262px;
   }
 
-  .card__element {
+  .movies-card__element {
     display: flex;
-    margin-bottom: 25px;
   }
 
-  .card__image {
+  .movies-card__image {
     object-fit: cover;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .card {
+  .movies-card {
     min-height: 237px;
   }
 
-  .card__title {
+  .movies-card__title {
     font-size: 12px;
   }
 
-  .card__element {
-    margin: 5px 10px 0 14px;
+  .movies-card__element {
+    margin: 5px 15px 0 15px;
   }
 
-  .card__time {
+  .movies-card__time {
     font-size: 10px;
     padding: 12px 0 0 0;
     margin: 0 0 0 15px;

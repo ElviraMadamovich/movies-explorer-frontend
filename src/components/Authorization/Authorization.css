@@ -1,15 +1,16 @@
 .authorization {
   max-width: 396px;
-  margin: 100px auto 90px auto;
+  margin: 0 auto 60px auto;
+  padding: 60px 0 0 0;
 }
 
 .authorization__content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 40px;
+  gap: 37px;
   width: 100%;
-  min-width: 396px;
+  max-height: 652px;
 }
 
 .authorization__title {
@@ -19,6 +20,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
+  color: rgba(0, 0, 0, 1);
 }
 
 .authorization__question {
@@ -50,17 +52,13 @@
 }
 
 .authorization__input:first-child {
-  margin: 0 0 2px 0;
+  margin: 0 0 5px 0;
 }
 
 .authorization__input:focus {
   outline-style: none;
   color: rgba(0, 0, 0, 1);
-  border-bottom: 1px solid #000000;
-}
-
-.authorization__input:last-of-type {
-  margin: 0 0 167px 0;
+  border-bottom: 1px solid #3456F3;
 }
 
 .authorization__input-upper-title {
@@ -98,9 +96,9 @@
   background-color: transparent;
   border: 0;
   padding: 0;
-  margin: 3px 0 24px 0;
+  margin: 3px 0 70px 0;
   min-width: 396px;
-  max-height: 266px;
+  height: 266px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -114,7 +112,7 @@
   color: rgba(255, 255, 255, 1);
   border: 0;
   color: rgba(255, 255, 255, 1);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
@@ -124,7 +122,8 @@
 }
 
 .authorization__button:hover {
-  opacity: 0.85;
+  opacity: 70%;
+  cursor: pointer;
 }
 
 .authorization__button_inactive {
@@ -146,20 +145,24 @@
 
 @media screen and (max-width: 440px) {
   .authorization {
-    margin: 74px 0 0 0;
+    margin: 74px 0 60px 0;
     max-width: 320px;
     padding: 0;
   }
 
   .authorization__data {
     min-width: 260px;
+    margin: 3px 0 191px 0;
   }
 
   .authorization__content {
     gap: 50px;
     justify-content: center;
     align-items: center;
-    min-width: 260px;
+  }
+
+  .authorization__form {
+    width: 81.25%;
   }
 
   .authorization__input {

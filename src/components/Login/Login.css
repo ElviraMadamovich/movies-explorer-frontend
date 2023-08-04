@@ -6,7 +6,8 @@
 }
 
 .login__logo:hover {
-	scale: 1.2;
+	opacity: 70%;
+	cursor: pointer;
 }
 
 .login__logo-svg {
@@ -26,7 +27,7 @@
 .login__line {
 	margin: 0;
 	color: rgba(139, 139, 139, 1);
-	font-family: "Inter", sans-serif;
+	font-family: "Inter", "Arial", sans-serif;
 	font-size: 10px;
 	font-weight: 400;
 }
@@ -48,8 +49,8 @@
 }
 
 .login__registration:hover {
-	opacity: 0.6;
-	scale: 1.1;
+	opacity: 70%;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 350px) {

@@ -22,7 +22,7 @@
 .about-project__title {
   margin: 0;
   width: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -42,7 +42,7 @@
 
 .about-project__steps-title {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -52,7 +52,7 @@
 
 .about-project__steps-description {
   margin: 26px 0 0 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -89,7 +89,7 @@
   margin: 0;
   padding: 11px 0 11px 1px;
   width: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
@@ -109,7 +109,6 @@
 .about-project__process-description {
   margin: 12px 0 0 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
@@ -122,8 +121,8 @@
   }
 
   .about-project__text {
-    gap: 30px;
-    margin-bottom: 93px;
+    gap: 25px;
+    margin: 70px 0 0 0;
   }
 
   .about-project__process {
@@ -140,9 +139,24 @@
   }
 
   .about-project__process-description {
-    margin: 16px 0 0;
+    margin: 15px 0 0;
     padding: 0;
     font-size: 14px;
+  }
+
+  .about-project__steps-description {
+    margin: 22px 0 0 0;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .about-project__process-column_first {
+    width: 21%;
+  }
+
+  .about-project__process-column_second {
+    width: calc(100% - 21%);
   }
 }
 

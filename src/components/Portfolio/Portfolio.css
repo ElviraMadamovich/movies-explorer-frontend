@@ -11,7 +11,7 @@
 .portfolio__title {
   margin-top: 0px;
   color: rgba(139, 139, 139, 1);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
@@ -36,7 +36,7 @@
 }
 .portfolio__image {
   color: rgba(0, 0, 0, 1);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 60px;
@@ -47,7 +47,7 @@
   padding-bottom: 19px;
   margin: 0px;
   color: rgba(0, 0, 0, 1);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 50px;
