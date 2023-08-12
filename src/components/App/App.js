@@ -1,15 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "../Header/Header";
 import Register from "../Register/Register";
 import Login from "../Login/Login";
 import Main from "../Main/Main";
+import Package from "../Package/Package";
 import Movies from "../Movies/Movies";
 import SavedMovies from "../SavedMovies/SavedMovies";
 import NotFound from "../NotFound/NotFound";
 import Profile from "../Profile/Profile";
-import Footer from "../Footer/Footer";
 
 function App() {
   return (
@@ -19,26 +18,26 @@ function App() {
           path="/"
           element={
             <>
-              <Header />
+              <Package>
               <Main />
-              <Footer />
+              </Package>
             </>
           }
         />
         <Route
           path="/movies"
           element={
-            <>
+            <Package>
               <Movies />
-            </>
+            </Package>
           }
         />
         <Route
           path="/saved-movies"
           element={
-            <>
+            <Package>
               <SavedMovies />
-            </>
+            </Package>
           }
         />
         <Route

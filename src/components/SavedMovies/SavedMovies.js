@@ -1,17 +1,13 @@
 import "./SavedMovies.css";
-import Header from "../Header/Header";
 import SearchForm from "../SearchForm/SearchForm";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 import movies from "../../utils/movies";
-import Footer from "../Footer/Footer";
 
 export default function SavedMovies() {
   return (
-    <section className="movies">
-      <Header />
+    <main className="movies saved-movies">
       <SearchForm />
       <MoviesCardList movies={movies} />
-      <Footer />
-    </section>
+    </main>
   );
 }

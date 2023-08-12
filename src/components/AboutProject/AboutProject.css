@@ -224,3 +224,19 @@
     max-height: 100px;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .about-project__process {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+
+  .about-project__process-column_first {
+    width: 100%;
+  }
+
+  .about-project__process-column_second {
+    width: 100%;
+  }
+}

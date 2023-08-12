@@ -125,10 +125,6 @@
 }
 
 @media screen and (max-width: 800px) {
-  .profile {
-    min-width: 768px;
-  }
-
   .profile__title {
     margin: 236px 0 96px 0;
   }
@@ -139,10 +135,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  .profile {
-    min-width: 320px;
-  }
-
   .profile__content {
     width: 100%;
   }

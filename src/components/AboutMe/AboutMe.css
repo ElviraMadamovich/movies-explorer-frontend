@@ -150,3 +150,9 @@
     object-fit: cover;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .about-me__picture {
+    width: 100%;
+  }
+}

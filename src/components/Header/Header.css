@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.header__logo {
+  display: flex;
+}
+
 .header__logo:hover {
   opacity: 70%;
   cursor: pointer;
