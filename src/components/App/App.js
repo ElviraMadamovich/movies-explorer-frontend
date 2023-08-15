@@ -19,7 +19,7 @@ function App() {
           element={
             <>
               <Package>
-              <Main />
+                <Main />
               </Package>
             </>
           }
@@ -67,9 +67,9 @@ function App() {
         <Route
           path="/profile"
           element={
-            <>
+            <Package>
               <Profile />
-            </>
+            </Package>
           }
         />
       </Routes>

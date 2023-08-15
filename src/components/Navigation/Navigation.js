@@ -11,8 +11,7 @@ function Navigation({ handleClose }) {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `navigation__link ${
-              isActive ? "navigation__link_active" : "navigation__link"
+            `navigation__link ${isActive ? "navigation__link_active" : "navigation__link"
             }`
           }
         >
@@ -21,8 +20,7 @@ function Navigation({ handleClose }) {
         <NavLink
           to="/movies"
           className={({ isActive }) =>
-            `navigation__link ${
-              isActive ? "navigation__link_active" : "navigation__link"
+            `navigation__link ${isActive ? "navigation__link_active" : "navigation__link"
             }`
           }
         >
@@ -31,21 +29,20 @@ function Navigation({ handleClose }) {
         <NavLink
           to="/saved-movies"
           className={({ isActive }) =>
-            `navigation__link ${
-              isActive ? "navigation__link_active" : "navigation__link"
+            `navigation__link ${isActive ? "navigation__link_active" : "navigation__link"
             }`
           }
         >
           Сохранённые фильмы
         </NavLink>
-      </div>
-      <div className="navigation__button-container">
-        <Link to="/profile" className="navigation__account">
-          Аккаунт
-        </Link>
-        <button className="navigation__account-button">
-          <img src={account} alt="аккаунт" />
-        </button>
+        <div className="navigation__button-container">
+          <Link to="/profile" className="navigation__account">
+            Аккаунт
+          </Link>
+          <Link to="/profile" className="navigation__account-button">
+            <img src={account} alt="аккаунт" />
+          </Link>
+        </div>
       </div>
       <button className="navigation__close" onClick={handleClose}>
         <img src={close} alt="закрыть" />

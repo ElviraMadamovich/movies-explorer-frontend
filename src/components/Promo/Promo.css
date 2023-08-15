@@ -4,17 +4,21 @@
 	flex-direction: column;
 	width: 100%;
 	height: max-content;
-	padding: 0;
+	padding: 75px 0 0 0;
+	margin: 0;
 }
 
 .promo__field {
 	display: flex;
-	margin: 15px 70px 83px 70px;
+	margin: 0 70px 75px 70px;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .promo__text {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
 	max-width: 635px;
 	margin: 0 20px 0 0;
 }
@@ -44,19 +48,42 @@
 
 .promo__image {
 	max-height: 310px;
-	margin: 61px 0px 0px auto;
+	margin: 0;
+}
+
+.promo__navtab {
+	font-family: "Inter", "Arial", sans-serif;
+	margin: 144px 0 0;
+	padding: 10px 20px 8px 20px;
+	border: 1px solid rgba(255, 255, 255, .6);
+	border-radius: 3px;
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	transition: opacity .2s linear;
+}
+
+.promo__navtab:hover {
+	opacity: .6;
+	cursor: pointer;
 }
 
 @media screen and (min-width: 501px) and (max-width:1279px) {
+	.promo {
+		padding: 0 0 70px 0;
+	}
+
 	.promo__field {
 		flex-direction: column-reverse;
 		text-align: center;
-		margin: 140px 0 93px 0;
+		margin: 140px 0 5px 0;
+		align-items: center;
 	}
 
 	.promo__text {
 		margin: 18px 0 0 0;
 		width: 100%;
+		align-items: center;
 	}
 
 	.promo__title {
@@ -76,19 +103,24 @@
 	.promo__image {
 		margin: 0px auto 30px auto;
 	}
+
+	.promo__navtab {
+		margin: 92px 0 0;
+	}
 }
 
 @media screen and (min-width: 200px) and (max-width: 500px) {
 	.promo__field {
 		flex-direction: column-reverse;
-		text-align: center;
-		margin: 68px 0 80px 0;
-		width: 93.75%;
+		margin: 0 0 30px 0;
+		align-items: center;
 	}
 
 	.promo__text {
-		margin: 10px 10px 0 10px;
-		max-width: 300px;
+		margin: 10px 0 0 0;
+		width: 93.75%;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.promo__title {
@@ -98,6 +130,7 @@
 		line-height: 38px;
 		letter-spacing: -0.04em;
 		margin: 0 0 25px 0;
+		text-align: center;
 	}
 
 	.promo__subtitle {
@@ -107,12 +140,21 @@
 		font-size: 13px;
 		line-height: 16px;
 		opacity: 0.5;
-		margin: 10px auto 0 auto;
+		margin: 0;
+		text-align: center;
 	}
 
 	.promo__image {
 		width: 210px;
 		max-height: 206px;
 		margin: 0px auto 30px auto;
+	}
+
+	.promo__navtab {
+		margin: 80px 0 0;
+	}
+
+	.promo__link:first-child {
+		margin: 0 0 10px 0;
 	}
 }

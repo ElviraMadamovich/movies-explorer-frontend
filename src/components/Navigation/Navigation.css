@@ -1,28 +1,37 @@
 .navigation {
-  width: 67.5%;
+  width: 100%;
+  min-height: 1400px;
   top: 0px;
   right: 0px;
   position: absolute;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-start;
   gap: 621px;
+  margin: 0;
   z-index: 5;
 }
+
 .navigation__container {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  margin-top: 159px;
+  width: 67.5%;
+  min-height: 1400px;
+  margin: 0;
   align-items: center;
+  background-color: rgba(255, 255, 255, 1);
 }
+
 .navigation__button-container {
   display: flex;
-  margin-bottom: 92px;
+  margin: 594px 0 60px 0;
   align-items: center;
   gap: 13px;
 }
+
 .navigation__link {
   text-decoration: none;
   font-family: "Inter", "Arial", sans-serif;
@@ -31,13 +40,20 @@
   line-height: 22px;
   color: rgba(0, 0, 0, 1);
 }
+
+.navigation__link:first-child {
+  margin: 157px 0 0 0;
+}
+
 .navigation__link:hover {
-  opacity: 70%;
+  opacity: .6;
   cursor: pointer;
 }
+
 .navigation__link_active {
   text-decoration: underline;
 }
+
 .navigation__account {
   text-decoration: none;
   font-family: "Inter", "Arial", sans-serif;
@@ -46,16 +62,24 @@
   line-height: 16px;
   color: rgba(0, 0, 0, 1);
 }
+
+.navigation__account:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
 .navigation__account-button {
   background-color: rgba(249, 249, 249, 1);
   border-radius: 6px;
   border: 0px;
   padding: 6px 9px;
 }
-.navigation__account:hover {
-  opacity: 70%;
+
+.navigation__account-button:hover {
+  opacity: .6;
   cursor: pointer;
 }
+
 .navigation__close {
   width: 22px;
   height: 22px;
@@ -63,28 +87,35 @@
   top: 21px;
   right: 31px;
   border: 0px;
-  background-color: inherit;
+  background-color: transparent;
   padding: 0px;
 }
+
 .navigation__close:hover {
-  opacity: 80%;
+  opacity: .6;
   cursor: pointer;
 }
+
 @media screen and (max-width: 400px) {
   .navigation {
-    width: 100%;
     gap: 444px;
   }
+
   .navigation__container {
     gap: 24px;
-    margin-top: 144px;
+    width: 100%;
+  }
+
+  .navigation__link:first-child {
+    margin: 145px 0 0 0;
   }
 
   .navigation__close {
     top: 13px;
     right: 24px;
   }
+
   .navigation__button-container {
-    margin-bottom: 48px;
+    margin: 420px 0 60px 0;
   }
 }

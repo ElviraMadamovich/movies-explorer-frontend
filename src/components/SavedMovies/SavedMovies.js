@@ -5,7 +5,7 @@ import movies from "../../utils/movies";
 
 export default function SavedMovies() {
   return (
-    <main className="movies saved-movies">
+    <main className="movies">
       <SearchForm />
       <MoviesCardList movies={movies} />
     </main>

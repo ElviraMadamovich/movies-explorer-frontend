@@ -39,7 +39,6 @@
   background-color: rgba(32, 32, 32, 1);
   border: rgba(32, 32, 32, 1);
   height: 140px;
-  color: rgba(32, 32, 32, 1);
 }
 
 .movies-card-list__button:hover {

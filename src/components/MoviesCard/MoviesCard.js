@@ -6,6 +6,11 @@ export default function MoviesCard({ title, duration, link }) {
   const [isCardLiked, setIsCardLiked] = useState(false);
   const location = useLocation();
 
+  const likeButton = (
+    `movies-card__like movies-card__like${!isCardLiked ? "_inactive" : "_active"
+    }`
+  );
+
   const handleOnClick = () => {
     setIsCardLiked(!isCardLiked);
   };
@@ -18,8 +23,7 @@ export default function MoviesCard({ title, duration, link }) {
         {location.pathname === "/movies" ? (
           <button
             type="button"
-            className={`movies-card__like_${!isCardLiked ? "inactive" : "active"
-              }`}
+            className={likeButton}
             onClick={handleOnClick}
           ></button>
         ) : (

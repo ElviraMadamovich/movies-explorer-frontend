@@ -78,7 +78,7 @@
 }
 
 .search__button:hover {
-  opacity: 80%;
+  opacity: .6;
   cursor: pointer;
 }
 
@@ -116,14 +116,14 @@
 }
 
 .search__toggle:checked {
-  background-color: black;
+  background-color: #EBEBEB;
 }
 
 .search__toggle:checked::after {
   content: "";
   height: 16px;
   width: 16px;
-  background-color: rgba(160, 160, 160, 1);
+  background-color: #F5F5F5;
   border-radius: 50%;
   position: absolute;
   top: 2px;

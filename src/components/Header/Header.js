@@ -31,7 +31,7 @@ function Header() {
                 Регистрация
               </Link>
 
-              <Link to="/signin" className="header__button" type="button">
+              <Link to="/signin" className="header__button">
                 Войти
               </Link>
             </nav>
@@ -68,9 +68,9 @@ function Header() {
                 <Link to="/profile" className="header__account-link">
                   Аккаунт
                 </Link>
-                <button className="header__account-button">
+                <Link to="/profile" className="header__account-button">
                   <img src={account} alt="аккаунт" />
-                </button>
+                </Link>
               </div>
             </nav>
             <button className="header__menu-button" onClick={handleOpen}>
