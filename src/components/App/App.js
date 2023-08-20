@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import Header from "../Header/Header";
 import Register from "../Register/Register";
 import Login from "../Login/Login";
 import Main from "../Main/Main";
@@ -67,9 +68,10 @@ function App() {
         <Route
           path="/profile"
           element={
-            <Package>
+            <>
+              <Header />
               <Profile />
-            </Package>
+            </>
           }
         />
       </Routes>

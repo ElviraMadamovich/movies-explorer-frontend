@@ -1,6 +1,7 @@
 .navigation {
   width: 100%;
   min-height: 1400px;
+  height: 100vh;
   top: 0px;
   right: 0px;
   position: absolute;
@@ -19,7 +20,7 @@
   flex-direction: column;
   gap: 28px;
   width: 67.5%;
-  min-height: 1400px;
+  height: 100vh;
   margin: 0;
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
