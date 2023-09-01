@@ -26,4 +26,4 @@ CSS (flexbox, grid)
 
 Ссылка на макет: https://www.figma.com/file/sbafdPapaPttp8DmLwoQxk/Diploma-(Copy)?type=design&node-id=932%3A2618&mode=design&t=5edO8Hme05QpiVzf-1
 
-Ссылка на пулл реквест: https://github.com/ElviraMadamovich/movies-explorer-frontend/pull/7
+Ссылка на пулл реквест: https://github.com/ElviraMadamovich/movies-explorer-frontend/pull/8
