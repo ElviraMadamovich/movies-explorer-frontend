@@ -28,6 +28,7 @@
 .profile__error-server {
   position: absolute;
   bottom: 112px;
+  right: 30px;
   color: rgba(238, 52, 101, 1);
   text-align: center;
   width: 95%;
@@ -188,6 +189,10 @@
   .profile__link {
     font-size: 12px;
     line-height: 13px;
+  }
+
+  .profile__error-server {
+    right: 10px;
   }
 }
 
