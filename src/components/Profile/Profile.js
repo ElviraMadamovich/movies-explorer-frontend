@@ -41,7 +41,7 @@ function Profile({ logOut, changeUserDetails, errorMessage, setErrorMessage, isL
                 Имя
               </label>
               <input
-                className={errors.nameInput ? "profile__input profile__input_type_error" : "profile__input"}
+                className={errors.name ? "profile__input profile__input_type_error" : "profile__input"}
                 type="name"
                 name="name"
                 id="name"
@@ -60,7 +60,7 @@ function Profile({ logOut, changeUserDetails, errorMessage, setErrorMessage, isL
                 E-mail
               </label>
               <input
-                className={errors.emailInput ? "profile__input profile__input_type_error" : "profile__input"}
+                className={errors.email ? "profile__input profile__input_type_error" : "profile__input"}
                 type="email"
                 name="email"
                 id="email"
