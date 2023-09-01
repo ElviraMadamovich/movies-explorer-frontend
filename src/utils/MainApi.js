@@ -1,4 +1,5 @@
 import { baseUrl } from "./authUrl";
+import checkResponse from './functions/checkResponse';
 
 export const addMovie = (data, token) => {
   return fetch(`${baseUrl}/movies`, {
@@ -21,11 +22,8 @@ export const addMovie = (data, token) => {
       nameEN: data.nameEN,
     }),
   }).then((res) => {
-    if (!res.ok) {
-      return Promise.reject(res.status);
-    }
-    return res.json();
-  });
+    return checkResponse(res)
+  })
 };
 
 export const getLikedMovies = (token) => {
@@ -36,11 +34,8 @@ export const getLikedMovies = (token) => {
       "Content-Type": "application/json",
     },
   }).then((res) => {
-    if (!res.ok) {
-      return Promise.reject(res.status);
-    }
-    return res.json();
-  });
+    return checkResponse(res)
+  })
 };
 
 export const deleteMovie = (movieId, token) => {
@@ -51,9 +46,6 @@ export const deleteMovie = (movieId, token) => {
       "Content-Type": "application/json",
     },
   }).then((res) => {
-    if (!res.ok) {
-      return Promise.reject(res.status);
-    }
-    return res.json();
-  });
+    return checkResponse(res)
+  })
 };
