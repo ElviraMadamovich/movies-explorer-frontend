@@ -52,7 +52,7 @@ export default function MoviesCardList({
             {isSearchError && !isLoading && !isNotFound && (
               <Notification
                 errorText={
-                  "Проверьте ваш запрос или попробуйте ещё раз"
+                  "Что-то пошло не так! Попробуйте ещё раз"
                 }
               />
             )}
@@ -79,16 +79,15 @@ export default function MoviesCardList({
                 })}
               </ul>
             )}
-
-            <button
-              onClick={showMoreMovies}
-              className={`${movies.length > seenMovies
+            {seenMovies < movies?.length && moviesPath ?
+              <button onClick={showMoreMovies} type='button' className={`${movies.length > seenMovies
                 ? "movies-card-list__button"
                 : "movies-card-list__button movies-card-list__button_inactive"
-                }`}
-            >
-              Ещё
-            </button>
+                }`}>
+                Ещё
+              </button>
+              : null
+            }
           </>
 
         )}
@@ -120,9 +119,6 @@ export default function MoviesCardList({
                 })}
               </ul>
             )}
-
-            <button className={"movies-card-list__button movies-card-list__button_inactive"}>Еще</button>
-
           </>
         )}
       </>
