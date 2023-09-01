@@ -1,4 +1,5 @@
 import { baseUrl} from "./authUrl";
+import checkResponse from "./functions/checkResponse";
 
 const request = (url, method, body, token) => {
   const options = {
@@ -18,11 +19,8 @@ const request = (url, method, body, token) => {
     };
   }
   return fetch(`${baseUrl}/${url}`, options).then((res) => {
-    if (!res.ok) {
-      return Promise.reject(res.status);
-    }
-    return res.json();
-  });
+    return checkResponse(res)
+  })
 };
 
 export const authorize = (email, password) => {
