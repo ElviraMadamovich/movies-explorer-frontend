@@ -1,3 +1,5 @@
+import checkResponse from "./functions/checkResponse";
+
 const config = {
   url: "https://api.nomoreparties.co/beatfilm-movies",
   headers: {
@@ -14,13 +16,9 @@ class Api {
   getBeatFilms() {
     return fetch(this.url, {
       headers: this.headers,
-    }).then(this._checkResponse);
-  }
-  _checkResponse(res) {
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(new Error("Произошла ошибка"));
+    }).then((res) => {
+      return checkResponse(res)
+    })
   }
 }
 
