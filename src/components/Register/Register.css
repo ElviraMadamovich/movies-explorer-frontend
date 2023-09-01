@@ -1,0 +1,39 @@
+.register__button {
+  width: 100%;
+  min-height: 45px;
+  border-radius: 3px;
+  background-color: rgba(66, 133, 244, 1);
+  color: rgba(255, 255, 255, 1);
+  border: 0;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: center;
+  padding: 0;
+  margin: 121px 0 0 0;
+}
+
+.register__button:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.register__button_inactive {
+  background-color: rgba(160, 160, 160, 1);
+  color: #ffffff33;
+  border: 1px solid rgba(160, 160, 160, 1);
+  cursor: auto;
+}
+
+.register__button_inactive:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 440px) {
+  .register__button {
+    font-size: 12px;
+    margin: 212px 0 0 0;
+  }
+}
