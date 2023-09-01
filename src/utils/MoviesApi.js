@@ -11,22 +11,19 @@ class Api {
     this.headers = config.headers;
   }
 
-  getInitialMovies() {
+  getBeatFilms() {
     return fetch(this.url, {
       headers: this.headers,
     }).then(this._checkResponse);
   }
-
   _checkResponse(res) {
     if (res.ok) {
       return res.json();
     }
-
-    // если ошибка, отклоняем промис
     return Promise.reject(new Error("Произошла ошибка"));
   }
 }
 
 const MovieApi = new Api(config);
 
-export const getMovies = MovieApi.getInitialMovies.bind(MovieApi);
+export const getMovies = MovieApi.getBeatFilms.bind(MovieApi);
