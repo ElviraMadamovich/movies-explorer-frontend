@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import { Routes, Route, useNavigate, Navigate, useLocation } from "react-router-dom";
 import "./App.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -195,7 +195,7 @@ function App() {
 
   function changeUserDetails({ name, email }) {
     const token = localStorage.getItem("token");
-    auth.checkToken(name, email, token)
+    auth.updateUser(name, email, token)
       .then((data) => {
         setLoggedIn(true);
         setCurrentUser(data);
@@ -293,11 +293,10 @@ function App() {
 
   useEffect(() => {
     if (
-      (!loggedIn && path === "/movies") ||
+      (!loggedIn) ||
+      path === "/movies" ||
       path === "/saved-movies" ||
-      path === "/profile" ||
-      path === "/signup" ||
-      path === "/signin"
+      path === "/profile"
     ) {
       navigate("/");
     }
@@ -321,26 +320,26 @@ function App() {
           <Route
             path="/signup"
             element={
-              <>
+              !loggedIn ?
                 <Register
                   createNewUser={createNewUser}
                   errorMessage={errorMessage}
                   setErrorMessage={setErrorMessage}
                 />
-              </>
+                : <Navigate to="/movies" />
             }
           />
           <Route
             path="/signin"
             element={
-              <>
+              !loggedIn ?
                 <Login
                   isActiveSubmitButton={isActiveSubmitButton}
                   login={login}
                   errorMessage={errorMessage}
                   setErrorMessage={setErrorMessage}
                 />
-              </>
+                : <Navigate to="/movies" />
             }
           />
           <Route
