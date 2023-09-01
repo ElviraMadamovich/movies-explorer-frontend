@@ -130,7 +130,7 @@
 .login__server-error {
   position: absolute;
   bottom: 112px;
-  right: 30px;
+  right: auto;
   color: rgba(255, 0, 76, 1);
   text-align: center;
   max-width: 396px;
@@ -267,7 +267,6 @@
   }
 
   .login__server-error {
-    right: 5px;
     max-width: 200px;
   }
 }
