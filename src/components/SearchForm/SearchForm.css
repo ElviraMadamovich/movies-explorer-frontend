@@ -1,0 +1,261 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0 10px 0;
+  width: 100%;
+  margin: 0;
+}
+
+.search__container {
+  margin: 0;
+  max-height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 89.08%;
+  padding: 0 0 69px 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.search__form {
+  border-radius: 9px;
+  background-color: rgba(253, 253, 253, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 15px 0 0;
+  min-height: 66px;
+  width: 100%;
+  gap: 27px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.search__field {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  margin: 5px 0 0 19px;
+  width: 76.8%;
+  border-right: 1px solid rgba(203, 203, 203, 1);
+}
+
+.search__image {
+  width: 22px;
+  height: 22px;
+  margin: 4px 4px 0 0;
+}
+
+.search__input {
+  padding: 0px;
+  margin-left: 10px;
+  border: 0px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.search__initiate {
+  display: flex;
+  width: 100%;
+}
+
+.search__input::placeholder {
+  color: rgba(139, 139, 139, 1);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.search__button {
+  max-height: 34px;
+  max-width: 34px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 0 0 6px;
+}
+
+.search__button:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.search__switch {
+  display: flex;
+  margin: 0;
+  gap: 14px;
+  align-items: center;
+  padding: 0;
+  min-height: 40px;
+}
+
+.search__toggle {
+  border-radius: 16px;
+  position: relative;
+  width: 36px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background-color: #EBEBEB;
+  cursor: pointer;
+  appearance: none;
+}
+
+.search__toggle::after {
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: #F5F5F5;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 18px;
+  transition: 0.3s ease;
+  transform: translateX(0);
+}
+
+.search__toggle:checked::after {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: #F5F5F5;
+  content: "";
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.search__toggle:checked {
+  background-color: rgba(61, 220, 132, 1);
+}
+
+.search__shortfilms {
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 7px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .search {
+    padding: 75px 0 10px 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .search__container {
+    padding-bottom: 109px;
+    width: 92.1875%;
+  }
+
+  .search__form {
+    min-height: 72px;
+    gap: 19px;
+    justify-content: space-between;
+  }
+
+  .search__field {
+    margin: 5px 0 0 25px;
+  }
+
+  .search__button {
+    height: 34px;
+    width: 80px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0 0 0 21px;
+  }
+
+  .search__shortfilms {
+    margin: 0 5px 0 0;
+  }
+
+  .search__switch {
+    gap: 15px;
+    min-height: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search {
+    padding: 0 0 1px 0;
+    margin: 105px 0 0 0;
+  }
+
+  .search__container {
+    padding: 0;
+    margin: 0 0 100px 0;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    width: 93.75%;
+  }
+
+  .search__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 0 43px 0;
+    ;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+    margin: 95px 0 50px 0;
+    border-bottom: 1px solid rgba(232, 232, 232, 1);
+  }
+
+  .search__field {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgba(253, 253, 253, 1);
+    min-height: 72px;
+    border-radius: 9px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: none;
+  }
+
+  .search__image {
+    display: none;
+  }
+
+  .search__button {
+    margin: 0 20px 0 0;
+  }
+
+  .search__initiate {
+    width: 100%;
+  }
+
+  .search__input {
+    margin: 0 0 0 20px;
+    width: 100%;
+    background-color: rgba(253, 253, 253, 1);
+  }
+
+  .search__input::placeholder {
+    font-size: 14px;
+  }
+
+  .search__switch {
+    padding: 0;
+    margin: 29px 0 0 0;
+    gap: 13px;
+    min-height: 20px;
+    border-left: 0;
+  }
+
+  .search__shortfilms {
+    font-size: 11px;
+    margin: 0;
+  }
+}

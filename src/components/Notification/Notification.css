@@ -1,0 +1,18 @@
+.notification__error {
+  margin: 50px auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(61, 220, 132, 1);
+  font-family: "Inter", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .notification__error {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
